@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 624e5c90a116cf946a5e85357313aaf5, type: 3}
+  m_Name: Boulder HD
+  m_EditorClassIdentifier: 
+  health: 100
+  requiresTool: 1
+  harvestTool: {fileID: 11400000, guid: 04b8201b95817c345bc8cf10b34a75a0, type: 2}
+  harvestDrops:
+  - itemData: {fileID: 11400000, guid: 60fc6cc5d47227843b5534f076746f6e, type: 2}
+    chance: 1
+  - itemData: {fileID: 11400000, guid: 60fc6cc5d47227843b5534f076746f6e, type: 2}
+    chance: 1
+  - itemData: {fileID: 11400000, guid: 60fc6cc5d47227843b5534f076746f6e, type: 2}
+    chance: 0.25
+  - itemData: {fileID: 11400000, guid: 60fc6cc5d47227843b5534f076746f6e, type: 2}
+    chance: 0.1

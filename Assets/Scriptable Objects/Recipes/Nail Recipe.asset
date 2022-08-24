@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6677ec6cce9640a40b60eea818f4ac6d, type: 3}
+  m_Name: Nail Recipe
+  m_EditorClassIdentifier: 
+  craftedMaterial:
+    itemData: {fileID: 11400000, guid: 6667404ddb9a6b045ba73bc8085194cb, type: 2}
+    amount: 2
+  craftingMaterials:
+  - itemData: {fileID: 11400000, guid: ca57038a1dd0f5841b1522426e6095d6, type: 2}
+    amount: 1
+  - itemData: {fileID: 11400000, guid: 60fc6cc5d47227843b5534f076746f6e, type: 2}
+    amount: 1

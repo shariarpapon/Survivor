@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be5bd9478c4b91440a4457e940778821, type: 3}
+  m_Name: Raw Iron
+  m_EditorClassIdentifier: 
+  type: 0
+  name: Raw Iron
+  prefab: {fileID: 2863077466660588015, guid: 31dfcb604b1ecd04e92ac2ab036af883, type: 3}
+  icon: {fileID: 21300000, guid: c8dbefb839eb3db4c8c6671440f858d1, type: 3}
+  maxItemsPerSlot: 16
+  healthConsumeAmount: 0
+  energyConsumeAmount: 0
+  damage: 1
+  durability: 0
+  description: Raw iron can be refined for better uses.

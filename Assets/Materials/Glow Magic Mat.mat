@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Glow Magic Mat
+  m_Shader: {fileID: -6465566751694194690, guid: ed96c261f6c8b73499d23975e4171abf, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_0e4549c2706647fe9e034b5148cb139d: 0.024
+    - Vector1_755b7605d30a42f4b921cff07ac7cb20: 0.354
+    - Vector1_9a99a04dc7074660b9cf4ce69e145a98: 29.11
+    - Vector1_d756efb0248c49feb96c2166d273560e: 0.1
+    m_Colors:
+    - Color_a196d0df2c934a49949a20699483a21a: {r: 0, g: 0, b: 0, a: 0}
+    - Color_c375d5e26a254f51a7b37a54285fe1b8: {r: 0.52420795, g: 0.7169812, b: 0.52420795, a: 1}
+    - Color_c90ce506ae1844c1bb40c253138135ed: {r: 2.143547, g: 0.52117616, b: 0, a: 1}
+    - Color_fb1b2cc377484177abb57656fd7cfa88: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

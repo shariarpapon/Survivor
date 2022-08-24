@@ -1,0 +1,48 @@
+#pragma kernel K1_ChunkUpdate
+
+//K1
+struct CS_ChunkData
+{
+    float2 coord;
+    int setActive;
+};
+
+RWStructuredBuffer<CS_ChunkData> ChunkDataArray;
+float maxChunkViewDist;
+float chunkSize;
+float chunkExt;
+float3 viewerPosition;
+int viewerChunkCoordX;
+int viewerChunkCoordY;
+int chunksVisibleEachDirection;
+int visibleChunkPerAxis;
+
+float boundDistToViewer(float3 min, float3 max, float3 viewer)
+{
+    float3 pointOnBounds = clamp(viewer, min, max);
+    return distance(pointOnBounds, viewer);
+};
+
+[numthreads(16,16,1)]
+void K1_ChunkUpdate (uint3 id : SV_DispatchThreadID)
+{
+    int ccx = viewerChunkCoordX + (id.x - chunksVisibleEachDirection);
+    int ccy = viewerChunkCoordY + (id.y - chunksVisibleEachDirection);
+
+    int index = id.y * visibleChunkPerAxis + id.x;
+
+    CS_ChunkData dataInstance = ChunkDataArray[index];
+
+    float2 center = float2(ccx * chunkSize + chunkExt, ccy * chunkSize + chunkExt);
+    float3 min = float3(center.x - chunkExt, 0, center.y - chunkExt);
+    float3 max = float3(center.x + chunkExt, 0, center.y + chunkExt);
+
+    float dist = boundDistToViewer(min, max, viewerPosition);
+
+    dataInstance.coord = float2(ccx, ccy);
+
+    if(dist <= maxChunkViewDist) dataInstance.setActive = 1;
+    else dataInstance.setActive = 0;
+
+    ChunkDataArray[index] = dataInstance;
+}

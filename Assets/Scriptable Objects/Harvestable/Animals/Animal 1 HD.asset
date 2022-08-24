@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 624e5c90a116cf946a5e85357313aaf5, type: 3}
+  m_Name: Animal 1 HD
+  m_EditorClassIdentifier: 
+  health: 50
+  requiresTool: 0
+  harvestTool: {fileID: 11400000, guid: 60601075064895e468c19f08de9bd134, type: 2}
+  onHitParticle: {fileID: 9087442897087774183, guid: ae01365c0c2a0be49a371be8bf7641d5, type: 3}
+  harvestDrops:
+  - itemData: {fileID: 11400000, guid: 85c70c07b79dcfe42a22785f8408c1e0, type: 2}
+    chance: 1
+  - itemData: {fileID: 11400000, guid: 85c70c07b79dcfe42a22785f8408c1e0, type: 2}
+    chance: 1
+  - itemData: {fileID: 11400000, guid: 85c70c07b79dcfe42a22785f8408c1e0, type: 2}
+    chance: 0.05

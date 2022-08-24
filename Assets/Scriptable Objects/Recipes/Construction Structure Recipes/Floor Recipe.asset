@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6677ec6cce9640a40b60eea818f4ac6d, type: 3}
+  m_Name: Floor Recipe
+  m_EditorClassIdentifier: 
+  craftedMaterial:
+    itemData: {fileID: 11400000, guid: 0494186846b37394eb8394a1c8a2ab44, type: 2}
+    amount: 1
+  craftingMaterials:
+  - itemData: {fileID: 11400000, guid: fff843e6db4fd48429f68342765f4ca2, type: 2}
+    amount: 2

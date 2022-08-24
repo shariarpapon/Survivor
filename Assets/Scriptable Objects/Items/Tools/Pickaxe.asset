@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be5bd9478c4b91440a4457e940778821, type: 3}
+  m_Name: Pickaxe
+  m_EditorClassIdentifier: 
+  type: 2
+  name: Stone Pickaxe
+  prefab: {fileID: 8900664163635969853, guid: b9700d949e427b741a750e4a26151ef9, type: 3}
+  icon: {fileID: 21300000, guid: 31d8fbd9be16594439f5fc144a56c5e9, type: 3}
+  maxItemsPerSlot: 1
+  healthConsumeAmount: 0
+  energyConsumeAmount: 0
+  damage: 20
+  durability: 80
+  description: Use a pickaxe to break big rocks and boulders to breakdown and gather
+    the resources they hold.

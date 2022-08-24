@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be5bd9478c4b91440a4457e940778821, type: 3}
+  m_Name: Apple
+  m_EditorClassIdentifier: 
+  type: 1
+  name: Apple
+  prefab: {fileID: 3288411121960543365, guid: 9a9726d0563f5de49b3217f3e2b6a298, type: 3}
+  icon: {fileID: 21300000, guid: 90dcd21a68b4c6349a6d6528e96cd377, type: 3}
+  maxItemsPerSlot: 16
+  healthConsumeAmount: 15
+  energyConsumeAmount: 8
+  damage: 1
+  durability: 0
+  description: This item can be consumed for health effects.

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e984f0cadbbd5d54b9c6f91fc86e9c64, type: 3}
+  m_Name: Wastelands
+  m_EditorClassIdentifier: 
+  type: 3
+  material: {fileID: 2100000, guid: dd1581e8854b6e34d8d66a6cfc40d4b3, type: 2}
+  groundColor: {r: 0.3584906, g: 0.19905667, b: 0.15726237, a: 0}
+  temperatureThreshold: 0.85
+  animals: []
+  worldFeatures:
+  - prefab: {fileID: 7482728307952355380, guid: e18531d4511b7b442b3c8ba157ea4278, type: 3}
+    spawnValue: 0.1
+  - prefab: {fileID: 3732918668719543737, guid: d5ce522fe7e00f94ba80ab5ee89057e6, type: 3}
+    spawnValue: 0.13
+  - prefab: {fileID: 5200192111800133608, guid: 5361c0082cd62454b906ade6555e2299, type: 3}
+    spawnValue: 0.145
+  - prefab: {fileID: 1177411243627351877, guid: ce3787836112627439c42d15baa82629, type: 3}
+    spawnValue: 0.16
+  - prefab: {fileID: 1549694945380230400, guid: 959d07a5ddb70a74fa620379681e4ba7, type: 3}
+    spawnValue: 0.185
+  - prefab: {fileID: 1505487084642326738, guid: b8baa573bd6e33f4696cc5cf1ed3e4f4, type: 3}
+    spawnValue: 0.2

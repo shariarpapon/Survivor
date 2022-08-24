@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 624e5c90a116cf946a5e85357313aaf5, type: 3}
+  m_Name: Tree HD
+  m_EditorClassIdentifier: 
+  health: 100
+  requiresTool: 1
+  harvestTool: {fileID: 11400000, guid: 9b9b6bdf201d95c45b874f9ee8eae430, type: 2}
+  onHitParticle: {fileID: 7991220582596569796, guid: 86bc3a7731d1e9d468249cf54d626d2b, type: 3}
+  harvestDrops:
+  - itemData: {fileID: 11400000, guid: c014fcd75abcc3e479da884139e42ff9, type: 2}
+    chance: 1
+  - itemData: {fileID: 11400000, guid: c014fcd75abcc3e479da884139e42ff9, type: 2}
+    chance: 1
+  - itemData: {fileID: 11400000, guid: c014fcd75abcc3e479da884139e42ff9, type: 2}
+    chance: 0.4
+  - itemData: {fileID: 11400000, guid: 4d8a977e9e4c23d4e868b1ea142891b4, type: 2}
+    chance: 0.2

@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ThickFog Mat
+  m_Shader: {fileID: -6465566751694194690, guid: d9c57075dcd1b8d4fb3dc8880924dfb3, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Boolean_0f7aea62a5194b53aca32e4b1e64a0f1: 0
+    - FadeStrength: 0.47
+    - FogDensity: 10
+    - FogDesnity: 0.7
+    - FogStrength: 18.43
+    - FogVisibility: 1
+    - NoiseInfluence: 1
+    - NoisePower: 1.53
+    - NoiseScale: 20
+    - StartDistance: 0.586
+    - Vector1_18b2481032f74e9f93145a5e7e404734: 20
+    - Vector1_205f6aa9d7b9468395077d12e27be5d5: 20
+    - Vector1_20a70008e1d94e61bac062bb557b709b: 0.635
+    - Vector1_900bfb7192544109846475704e305c5b: 12.15
+    - Vector1_939be90bbee0429fb6df4a929ba27a4b: 11.21
+    - Vector1_a327c0d22ac34837848dd25e7fe049e3: 0.9
+    - Vector1_abadcb94c4354a2892a6e2575282d1ec: 1
+    - Vector1_cd191289b7ee48709ada92eeaa5f1356: 0.5
+    - Vector1_cfe599f31d4341cba88ce5aff183fef3: 2.04
+    - Vector1_d831075d071a4287989dd299299488e9: 0
+    - Vector1_f73935745df74b8da87870b06ce36b32: 0.65
+    - Vector1_febfd80596184445b5510a218cb29da0: -0
+    - VerticalDensity: -3.6
+    m_Colors:
+    - Color_ba0514dc21fc451eb3c8a389b7527991: {r: 1, g: 1, b: 1, a: 0}
+    - FogColor: {r: 0.6236205, g: 0.7515062, b: 0.9245283, a: 1}
+    - NoiseVelocity: {r: 1.4, g: 4.64, b: 0.26, a: 0}
+    - Vector2_2856c53d7d8245d29395d46a179e790b: {r: 0, g: 1, b: 0, a: 0}
+    - Vector2_525f73f47f07454cb6a23d3b3bf56613: {r: 0.81, g: 1, b: 0, a: 0}
+    - fogcolor: {r: 1, g: 0.3021275, b: 0.15566039, a: 0}
+  m_BuildTextureStacks: []

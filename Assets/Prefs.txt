@@ -1,0 +1,5 @@
+Special Text Color : ECDCB3
+Default BG Color : 484848 
+Default FG Color : 3F3F3F
+In-menu Text Color : C0C0C0
+In-menu Button Color : 262626

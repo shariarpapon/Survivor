@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Stylized Menu BG
+  m_Shader: {fileID: -6465566751694194690, guid: ee4fd5386d6e6d148a182e2ab310ec5c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_2759201dfe8c4078ba76611bab09e27d: 0.025
+    - Vector1_2e30bf2fe12b41c98fa2111749e8f528: 0.3
+    - Vector1_50f2ddbe964042fe8d18f26566da76ef: 10
+    - Vector1_f1098b5127724ee984f0eb46a2f0a343: 15
+    - Vector1_f2a86b5cd3bd44e1aa479830076c9c90: 300
+    m_Colors:
+    - Color_242c6ea5b81f4cd9baf73ba6ab099bc8: {r: 0.990566, g: 0.990566, b: 0.990566, a: 0}
+    - Color_d8e5fac302d844e28a6ba35b2c98adc8: {r: 0.9529412, g: 0.9529412, b: 0.9529412, a: 0}
+  m_BuildTextureStacks: []

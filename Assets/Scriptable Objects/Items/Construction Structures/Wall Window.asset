@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be5bd9478c4b91440a4457e940778821, type: 3}
+  m_Name: Wall Window
+  m_EditorClassIdentifier: 
+  type: 0
+  name: Wall Window
+  prefab: {fileID: 2759394952306272429, guid: ed222e31b346e824bacbaf42b1e2e1cd, type: 3}
+  icon: {fileID: 21300000, guid: aff414cc5ab44dd43a9ed72852e8c2ee, type: 3}
+  maxItemsPerSlot: 1
+  healthConsumeAmount: 0
+  energyConsumeAmount: 0
+  damage: 1
+  durability: 0
+  description: 

@@ -1,0 +1,30 @@
+[Shariar : TODO]
+
+--> Improve AI path finding.
+
+--> Fix player controller
+
+--> Make structures snap to appropriate position when building 
+
+--> VFX weather phenomenas (tornados, rain, snow).
+
+--> Add camera shake for attacks.
+
+--> Implement optimized player movement, run, jump, headbob
+
+--> Model 3D explorable castle [story element]
+
+--> Upgrade grass system
+
+--> Storyline for the games
+
+--> Add core game items and mechanics
+
+--> Implement seasonal weather system (winter, summer, spring, fall)
+
+--> Implement audio manager for SFX when interacting
+
+--> Add data serialization system and saving/loading data
+
+--> Come up with new game mechanichs / find bugs / fix bugs
+
