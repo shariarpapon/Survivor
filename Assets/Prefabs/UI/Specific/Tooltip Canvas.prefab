@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -113,6 +113,7 @@ GameObject:
   - component: {fileID: 7768095721771519684}
   - component: {fileID: 2044646879311412659}
   - component: {fileID: 8156019175594486454}
+  - component: {fileID: 1574282484538682375}
   m_Layer: 5
   m_Name: Tooltip Canvas
   m_TagString: Untagged
@@ -184,3 +185,17 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 0
+--- !u!114 &1574282484538682375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6292307108166431333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf3983997c409e48bb411a502a94cab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textBox: {fileID: 9212942841203514810, guid: a00f08b258c62674781fd309d361ba15, type: 3}
+  tooltipWindow: {fileID: 7768095721771519684}

@@ -3,13 +3,13 @@ using UnityEngine;
 
 public class ItemContainer : MonoBehaviour, IInitializer
 {
-    public GameObject inventoryPanel;
+    [SerializeField] private GameObject slotHolder;
     private ItemSlot[] slots;
 
     public virtual IEnumerator Init()
     {
-        slots = new ItemSlot[inventoryPanel.transform.childCount];
-        for (int i = 0; i < slots.Length; i++) slots[i] = inventoryPanel.transform.GetChild(i).GetComponent<ItemSlot>();
+        slots = new ItemSlot[slotHolder.transform.childCount];
+        for (int i = 0; i < slots.Length; i++) slots[i] = slotHolder.transform.GetChild(i).GetComponent<ItemSlot>();
         yield return null;
     }
 

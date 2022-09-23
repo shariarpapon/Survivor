@@ -1,49 +1,52 @@
 using UnityEngine;
 
-public class EquipmentManager : MonoBehaviour
+namespace Survivor.Core
 {
-    public static EquipmentManager Instance { get; private set; }
-    public ToolSlot toolSlot;
-    public Transform toolEquipOrigin;
-    public ItemData EquipedTool { get { return toolSlot.slotItem.itemData; } }
-
-    private GameObject toolInstance;
-
-    private void Awake() 
+    public class EquipmentManager : MonoBehaviour
     {
-        if (Instance == null) Instance = this;
-    }
+        public static EquipmentManager Instance { get; private set; }
+        public ToolSlot toolSlot;
+        public Transform toolEquipOrigin;
+        public ItemData EquipedTool { get { return toolSlot.slotItem.itemData; } }
 
-    public void EquipTool() 
-    {
-        if (toolSlot.IsEmpty || toolSlot.slotItem.itemData.type != ItemType.Tool) return;
+        private GameObject toolInstance;
 
-        Destroy(toolInstance);
+        private void Awake()
+        {
+            if (Instance == null) Instance = this;
+        }
 
-        toolInstance = Instantiate(toolSlot.slotItem.itemData.prefab, toolEquipOrigin);
-        toolInstance.transform.localScale = Vector3.one;
-        toolInstance.transform.localPosition = Vector3.zero;
+        public void EquipTool()
+        {
+            if (toolSlot.IsEmpty || toolSlot.slotItem.itemData.type != ItemType.Tool) return;
 
-        Interactable interactable = toolInstance.GetComponent<Interactable>();
-        if (interactable) Destroy(interactable);
-    }
+            Destroy(toolInstance);
 
-    public void UnequipTool()
-    {
-        Destroy(toolInstance);
-    }
+            toolInstance = Instantiate(toolSlot.slotItem.itemData.prefab, toolEquipOrigin);
+            toolInstance.transform.localScale = Vector3.one;
+            toolInstance.transform.localPosition = Vector3.zero;
 
-    public void DamageTool(float damage) 
-    {
-        toolSlot.slotItem.DamageTool(damage);
-        toolSlot.UpdateDurabilityBar();
+            Interactable interactable = toolInstance.GetComponent<Interactable>();
+            if (interactable) Destroy(interactable);
+        }
 
-        if (toolSlot.slotItem.stats.durability <= 0) DestroyTool();
-    }
+        public void UnequipTool()
+        {
+            Destroy(toolInstance);
+        }
 
-    private void DestroyTool()
-    { 
-        Destroy(toolInstance);
-        toolSlot.Remove(false);
+        public void DamageTool(float damage)
+        {
+            toolSlot.slotItem.DamageTool(damage);
+            toolSlot.UpdateDurabilityBar();
+
+            if (toolSlot.slotItem.stats.durability <= 0) DestroyTool();
+        }
+
+        private void DestroyTool()
+        {
+            Destroy(toolInstance);
+            toolSlot.Remove(false);
+        }
     }
 }

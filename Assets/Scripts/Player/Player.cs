@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using Survivor.Core;
+using Survivor.WorldManagement;
 
 public class Player : MonoBehaviour, IInitializer
 {
@@ -37,7 +38,7 @@ public class Player : MonoBehaviour, IInitializer
         if (IsExhausted) OnPlayerExhausted();
         if (IsDead) OnPlayerDead();
 
-        vitals.temperature.value = GetEnvironmentTemperature();
+        vitals.temperature.value = GetPlayerSurroundingTemperature(WorldManager.Instance.overworld);
 
         switch (vitals.GetBodyTemperatureState)
         {
@@ -52,10 +53,9 @@ public class Player : MonoBehaviour, IInitializer
         
     }
 
-    private float GetEnvironmentTemperature() 
+    public float GetPlayerSurroundingTemperature(World world) 
     {
-        Chunk chunk = WorldManager.chunkDictionary[new Vector2(Mathf.Floor(transform.position.x / WorldManager.CHUNK_DIMENSION), Mathf.Floor(transform.position.z / WorldManager.CHUNK_DIMENSION))];
-        float envTemp = 1 - chunk.mapData.vertexData[(int)transform.position.x % WorldManager.CHUNK_DIMENSION, (int)transform.position.z % WorldManager.CHUNK_DIMENSION].temperatureValue;
+        float envTemp = world.GetTemperatureAtPosition(transform.position);
         return Mathf.Lerp(vitals.temperature.value, envTemp, Time.deltaTime * temperatureChangeRate);
     }
 

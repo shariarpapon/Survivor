@@ -29,7 +29,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGameButton()
     {
-        PermissionManager.Instance.PermissionPrompt("Start a new game?", ()=> { SceneManager.LoadScene("Game"); });
+        UIPromptManager.Instance.PermissionPrompt("Start a new game?", ()=> { SceneManager.LoadScene("Game"); });
     }
 
     public void SavesButton()
@@ -50,7 +50,7 @@ public class MainMenu : MonoBehaviour
 
     public void QuitGameButton()
     {
-        PermissionManager.Instance.PermissionPrompt("Quit game?", Application.Quit);
+        UIPromptManager.Instance.PermissionPrompt("Quit game?", Application.Quit);
     }
 
     public void StartSavedGame(int gameIndex)

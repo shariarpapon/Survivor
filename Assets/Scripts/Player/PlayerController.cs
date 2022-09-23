@@ -8,8 +8,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float walkSpeed;
     [SerializeField] private float runSpeed;
     [SerializeField] private LayerMask whatIsGround;
-    [SerializeField] private Vector2 inputDirection;
-
+    
+    private Vector2 inputDirection;
     private Rigidbody rb;
 
     private void Awake() 

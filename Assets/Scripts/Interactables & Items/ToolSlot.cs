@@ -1,3 +1,5 @@
+using Survivor.Core;
+
 public class ToolSlot : ItemSlot
 {
     public override bool TryAdd(Item item)

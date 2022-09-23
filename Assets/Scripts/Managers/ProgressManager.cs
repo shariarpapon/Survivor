@@ -1,20 +1,23 @@
-public static class ProgressManager
+namespace Survivor.Core
 {
-    public static int totalOperations;
-    public static int operationsComplete;
-
-    public static void LogOperations(int operations) 
+    public static class ProgressManager
     {
-        totalOperations += operations;
-    }
+        public static int totalOperations;
+        public static int operationsComplete;
 
-    public static void UpdateProgress() 
-    {
-        operationsComplete++;
-    }
+        public static void LogOperations(int operations)
+        {
+            totalOperations += operations;
+        }
 
-    public static float Progress 
-    {
-        get { return (float)operationsComplete / (float)totalOperations; }
+        public static void UpdateProgress()
+        {
+            operationsComplete++;
+        }
+
+        public static float Progress
+        {
+            get { return (float)operationsComplete / (float)totalOperations; }
+        }
     }
 }

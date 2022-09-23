@@ -1,9 +1,12 @@
 using UnityEngine;
 
-[System.Serializable]
-public class WorldFeature
+namespace Survivor.WorldManagement
 {
-    public GameObject prefab;
-    [Range(0, 1)]
-    public float spawnValue;
+    [System.Serializable]
+    public class WorldFeature
+    {
+        public GameObject prefab;
+        [Range(0, 1)]
+        public float spawnValue;
+    }
 }

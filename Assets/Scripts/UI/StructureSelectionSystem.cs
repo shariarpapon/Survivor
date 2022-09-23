@@ -1,4 +1,5 @@
 using UnityEngine;
+using Survivor.Core;
 
 public class StructureSelectionSystem : MonoBehaviour
 {

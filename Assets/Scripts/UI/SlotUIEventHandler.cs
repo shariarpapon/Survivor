@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using Survivor.Core;
 
 public class SlotUIEventHandler : MonoBehaviour, IInitializer, IEndDragHandler, IDragHandler, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler, IBeginDragHandler
 {

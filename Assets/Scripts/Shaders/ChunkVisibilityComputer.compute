@@ -1,6 +1,5 @@
-#pragma kernel K1_ChunkUpdate
+#pragma kernel Compute
 
-//K1
 struct CS_ChunkData
 {
     float2 coord;
@@ -17,14 +16,14 @@ int viewerChunkCoordY;
 int chunksVisibleEachDirection;
 int visibleChunkPerAxis;
 
-float boundDistToViewer(float3 min, float3 max, float3 viewer)
+float BoundDistToViewer(float3 min, float3 max, float3 viewer)
 {
     float3 pointOnBounds = clamp(viewer, min, max);
     return distance(pointOnBounds, viewer);
 };
 
 [numthreads(16,16,1)]
-void K1_ChunkUpdate (uint3 id : SV_DispatchThreadID)
+void Compute(uint3 id : SV_DispatchThreadID)
 {
     int ccx = viewerChunkCoordX + (id.x - chunksVisibleEachDirection);
     int ccy = viewerChunkCoordY + (id.y - chunksVisibleEachDirection);
@@ -37,7 +36,7 @@ void K1_ChunkUpdate (uint3 id : SV_DispatchThreadID)
     float3 min = float3(center.x - chunkExt, 0, center.y - chunkExt);
     float3 max = float3(center.x + chunkExt, 0, center.y + chunkExt);
 
-    float dist = boundDistToViewer(min, max, viewerPosition);
+    float dist = BoundDistToViewer(min, max, viewerPosition);
 
     dataInstance.coord = float2(ccx, ccy);
 

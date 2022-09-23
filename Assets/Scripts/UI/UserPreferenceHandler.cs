@@ -11,7 +11,7 @@ public class UserPreferenceHandler : MonoBehaviour
 
     private void Awake() 
     {
-        userPreference.LoadData();
+        userPreference.LoadUniversalData();
         ReadFromUserPreference();
     }
 

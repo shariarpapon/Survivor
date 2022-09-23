@@ -11,11 +11,11 @@ public class PermissionWindowUI : MonoBehaviour
 
     private void Awake() 
     {
-        PermissionManager.isPromptOpen = true;
+        UIPromptManager.IsPermissionPromptOpen = true;
     }
 
     private void OnDestroy() 
     {
-        PermissionManager.isPromptOpen = false;
+        UIPromptManager.IsPermissionPromptOpen = false;
     }
 }

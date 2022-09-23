@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47a42393ebc2f748be82330cbd1d6d0, type: 3}
+  m_Name: World Settings - Overworld
+  m_EditorClassIdentifier: 
+  seed: test-seed
+  worldSize: 1488
+  landAltitude: 4
+  waterLevel: 0
+  colorNoiseScale: 30
+  waterMaterial: {fileID: 2100000, guid: 55017f1a01259744a8e40a41b5c5920d, type: 2}
+  chunkVisbilityComputer: {fileID: 7200000, guid: 2c49b5c6f9300b248b50d977cf9def09, type: 3}
+  shoreColor: {r: 0.9150943, g: 0.8003478, b: 0.5395603, a: 0}
+  temperatureMapInfo:
+    scale: 40
+    amplitude: 5
+    frequency: 0.5
+    minOffset: 0.05
+    maxOffset: 0.05
+  heightMapInfo:
+    heightMultiplier: 0.5
+    globalScale: 45
+    globalFrequency: 0.5
+    globalAmplitude: 1
+    landFillThreshold: 0.25
+    applyFalloff: 1
+    falloffSharpness: 40
+    falloffShift: 1
+    octaves: 4
+    lacunarity: 2
+    persistence: 0.5
+  spawnSettings:
+    maxFeatureSpawnAngle: 4
+    naturalFeatureSpawnChance: 0.15
+    maxPositionOffset: 0.35
+  biomes:
+  - {fileID: 11400000, guid: 4147653b4e2fba84582975d5c096137a, type: 2}
+  - {fileID: 11400000, guid: 1c12b8fa006156048836518f1cfab3ee, type: 2}
+  - {fileID: 11400000, guid: 976c1038888e5be429fa49f9382f9032, type: 2}
+  - {fileID: 11400000, guid: 679adfa3b3b97b1428f6492aaedc60e6, type: 2}

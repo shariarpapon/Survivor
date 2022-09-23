@@ -1,12 +1,8 @@
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
-using System.IO;
 using SimpleJSON;
-using Survivor.Core;
 
 [CreateAssetMenu(fileName = "User Preference", menuName = "Scriptableobjects/User Preference")]
-public class UserPreference : ScriptableObject, IGlobalStorableData
+public class UserPreference : ScriptableObject, IUniversalStorableData
 {
     [Header("Audio")]
     [Range(0, 1)]
@@ -19,31 +15,26 @@ public class UserPreference : ScriptableObject, IGlobalStorableData
     public float ambientVolume = 1;
 
 
-    public void SaveData() 
+    public void SaveUniversalData() 
     {
         JSONObject json = new JSONObject();
         json.Add(nameof(masterVolume), masterVolume);
         json.Add(nameof(musicVolume), musicVolume);
         json.Add(nameof(sfxVolume), sfxVolume);;
         json.Add(nameof(ambientVolume), ambientVolume);
-        File.WriteAllText(GetDataPath(), json.ToString());
+
+        GameDataIO.WriteUniversalFile("user_preference", json.ToString());
     }
 
-    public void LoadData() 
+    public void LoadUniversalData() 
     {
-        string path = GetDataPath();
-        if (File.Exists(path) == false) return;
+        string data = GameDataIO.ReadUniversalFile("user_preference");
+        if (string.IsNullOrEmpty(data)) return;
 
-        string data = File.ReadAllText(path);
         JSONObject json = JSON.Parse(data) as JSONObject;
         masterVolume = json[nameof(masterVolume)];
         musicVolume = json[nameof(musicVolume)];
         sfxVolume = json[nameof(sfxVolume)];
         ambientVolume = json[nameof(ambientVolume)];
-    }
-
-    public string GetDataPath() 
-    {
-        return GameManager.GetGlobalDataFilePath("uPrefs");
     }
 }

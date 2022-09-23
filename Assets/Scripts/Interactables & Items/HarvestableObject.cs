@@ -1,3 +1,7 @@
+using Survivor.Core;
+using Survivor.WorldManagement;
+using UnityEngine;
+
 public class HarvestableObject : OnHitInteractable 
 {
     public HarvestableData data;
@@ -47,7 +51,7 @@ public class HarvestableObject : OnHitInteractable
         for (int i = 0; i < data.harvestDrops.Length; i++) 
         {
             ItemDrop drop = data.harvestDrops[i];
-            if (WorldManager.prng.NextDouble() <= drop.chance) interactor.DropToGround(new Item(drop.itemData));
+            if (Random.Range(0.0f, 1.0f) <= drop.chance) interactor.DropToGround(new Item(drop.itemData));
         }
         Destroy(gameObject);
     }

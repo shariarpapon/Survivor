@@ -6,7 +6,6 @@ using UnityEngine;
 public static class GameUtility
 {
     public static readonly HashSet<int> ObjectsCurrentlyTweening = new HashSet<int>();
-
     private static int DebugCount = 1000;
 
     #region Item Functions
@@ -235,19 +234,19 @@ public static class GameUtility
         }
     }
 
-    public static IEnumerator TweenScaleIn(GameObject obj, float durationInFrames, Vector3 maxScale)
+    public static IEnumerator TweenScaleIn(GameObject obj, float duration, Vector3 maxScale)
     {
         if (!ObjectsCurrentlyTweening.Contains(obj.GetInstanceID()))
         {
             ObjectsCurrentlyTweening.Add(obj.GetInstanceID());
             Transform tf = obj.transform;
             tf.localScale = Vector3.zero;
-            tf.gameObject.SetActive(true);
+            obj.SetActive(true);
 
             float frame = 0;
-            while (frame <= durationInFrames)
+            while (frame <= duration)
             {
-                tf.localScale = Vector3.Lerp(Vector3.zero, maxScale, frame / durationInFrames);
+                tf.localScale = Vector3.Lerp(Vector3.zero, maxScale, frame / duration);
                 frame++;
                 yield return null;
             }
@@ -353,7 +352,6 @@ public static class GameUtility
             yield return null;
         }
     }
-
     #endregion
 
     #region Game Functionality

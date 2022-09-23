@@ -1,5 +1,7 @@
 [Shariar : TODO]
 
+--> Make biome assigning more dynamic
+
 --> Improve AI path finding.
 
 --> Fix player controller

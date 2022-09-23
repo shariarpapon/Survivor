@@ -24,7 +24,7 @@ public class PauseMenu : MonoBehaviour
 
     private void Update() 
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && PermissionManager.isPromptOpen == false)
+        if (Input.GetKeyDown(KeyCode.Escape) && UIPromptManager.IsPermissionPromptOpen == false)
         {
             if (pauseMenu.activeSelf) GameManager.SetGameMode(GameMode.Playing);
             else GameManager.SetGameMode(GameMode.Paused);
@@ -38,7 +38,7 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitButton() 
     {
-        PermissionManager.Instance.PermissionPrompt("Quit game? Make sure to save the game first !", Application.Quit);
+        UIPromptManager.Instance.PermissionPrompt("Quit game? Make sure to save the game first !", Application.Quit);
     }
 
     private void OnPauseEvents() 
@@ -55,6 +55,6 @@ public class PauseMenu : MonoBehaviour
 
     public void GoToMainMenu() 
     {
-        PermissionManager.Instance.PermissionPrompt("Go to main menu? Make sure to save the game first !", ()=> GameManager.SetGameMode(GameMode.MainMenu));
+        UIPromptManager.Instance.PermissionPrompt("Go to main menu? Make sure to save the game first !", ()=> GameManager.SetGameMode(GameMode.MainMenu));
     }
 }
